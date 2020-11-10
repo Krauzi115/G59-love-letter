@@ -1,14 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style>
+* {
+   box-sizing: border-box;
+}
+.imageColumn {
+   float: left;
+   width: 25%;
+   padding: 10px;
+}
+h1{
+   text-align: center;
+   font-family: fantasy;
+   color: crimson;
+   border-style: groove;
+  border-color: black;
+}
+
+body {
+  background-color: grey;
+} 
+
+
+.imageColumn {
+    position: relative;
+    width: 33.3333%;
+    float: left;
+
+
+  }
+
+
+
+.text {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imageColumn:hover .image {
+    opacity: 0.3;
+}
+
+.imageColumn:hover .middle {
+    opacity: 1;
+}
+
+
+
+</style>
+
+
 </head>
 <body>
-    <h1>
-        Artists of G*59
-    </h1>
-       <img src = du3.webp> 
+<h1>GUARDIANS OF THE GREY ZONE</h1>
+<div class="alignRow">
+
+  <a href="https://soundcloud.com/shakewell818">
+    <div class="imageColumn">
+    <img src="shake.jpg" alt="Snow" style="width:100%">
+  
+  </a>
+
+ 
+  
+
+  <div class="middle">
+    <div class="text">Shakewell (Andrew Adolph), San Fernando Valley </div>
+  </div>
+
+  </div>
+  <a href="https://soundcloud.com/germone">   
+    <div class="imageColumn">
+    <img src="germ.jpg" alt="Mountains" style="width:100%">
+
+    </a>  
+  <div class="middle">
+    <div class="text">Germ (Jerry Antoine), Atlanta </div>
+  </div>
+
+  </div>
+  <a href="https://soundcloud.com/ramirez_187">
+    <div class="imageColumn">
+    <img src="ramirez.jpg" alt="Snow" style="width:100%">
+    </a>
+  <div class="middle">
+    <div class="text">RVMIRXZ (Ivan Ramirez), San Francisco</div>
+  </div>
+
+  </div>
+
+  <a href="https://soundcloud.com/g59">
+    <div class="imageColumn">
+    <img src="duo5.jpg" alt="Snow" style="width:100%">
+  </a>
+  <div class="middle">
+    <div class="text">$uicideBoy$ (Aristos Petrou and Scott Arceneaux Jr.), New Orleans</div>
+  </div>
+
+  </div>
+
+  
+    
+  
+
+
+</div>
+
+
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Feature</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        font-family: fantasy;
+        color: crimson;
+        border-style: groove;
+        border-color: black;
+        }
+
+        body{
+            background-color: grey;
+        }
+
+        label{
+  display: inline-block;
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+    </style>
+</head>
+<body>
+    <h1>
+        RARE FOOTAGE OF MASS GATHERING INSIDE THE GREY ZONE ON GREY DAY
+    </h1>
+
+       <video width="320" height="240" controls>
+            <source src="shakewell1.mp4" type="video/mp4">
+        </video><br>
+    <br><hr>
+
+    <video width="320" height="240" controls>
+        <source src="shakewell2.mp4" type="video/mp4">
+    </video><br>
+<br><hr>
+
+<input type="file" id="upload" hidden/>
+<label for="upload">Choose file</label>
+
+<script>
+
+const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+</script>
+
+</body>
+</html>

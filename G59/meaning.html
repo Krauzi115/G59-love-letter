@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks</title>
+
+    <style>
+        h1 {
+            font-family: fantasy;
+            text-align: center;
+            color:crimson;
+            border-style: groove;
+            border-color: black;
+        }
+
+        p {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+      background-color: grey;
+    }
+
+
+
+   
+    
+    
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <h1>
+
+        A Love Letter To G*59
+    </h1>
+    <div class="text">
+
+        <p><br>The love I have for the G*59 Record Label is like no other. Never have I found a singular place where all my favorite artists reside.</br>
+            <br>The artists of this record label speak words and explore subjects of suicidal ideation and depression, themes not widely expressed in the music industry.</br>
+            <br>setting themselves apart from other mainstream artists. This underground label has attracted a massive cult following, gaining more and more popularity as the years have gone on.</br>
+            <br>Like so many others, I love music. It has the power to influence how you feel, think, and act. </br>
+            <br>Everybody goes through pain in their lives. Some cope by meditating, others by journaling. I like to cope by listening to music</br>
+            <br>Being able to listen to these artists have helped me deal with pain and consoled me when I needed it most. </br>
+            <br>The first artists of G*59 that I listened to were those of $uicideBoy$. No, I never felt depressed or thoughts of suicide,</br>
+            <br>but I suffered from emotional suppression. I bottled up my feelings inside telling no one, and let it eat me from the inside.  
+            
+            <br>My one wish is that I discovered this record label sooner. G*59, from the bottom of my heart, THANK YOU for being there for me.</br> 
+            <br>GREY FIVE NINE TILL THE END<br>
+        </p>
+    
+    </div>
+
+    <form action="/file:///C:/Users/user1/desktop/G59/meaning.html" method="post">
+        <div>
+        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+        Hey... say something!
+        </textarea>
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+
+
+        <div class="comment">
+            <textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
+            <input type="submit" value="Post" onclick="insert()" style="width:20px;" /></form>
+            </div>
+            <div id="display"></div>
+            <script type="text/javascript">
+            var titles = [];
+            var titleInput = document.getElementById("title");
+            var messageBox = document.getElementById("display");
+            function Allow()
+            {
+            if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+            {
+            user.title.value="";
+            alert("Please Enter only alphabets");
+            }
+            window.location.reload()
+            }
+            function insert () {
+            titles.push(titleInput.value);
+            clearAndShow();
+            }
+            function clearAndShow ()
+            {
+            titleInput.value = "";
+            messageBox.innerHTML = "";
+            messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+            }
+            </script>
+
+    
+
+</body>
+</html>
