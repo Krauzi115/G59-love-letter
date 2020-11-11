@@ -28,36 +28,120 @@
   cursor: pointer;
   margin-top: 1rem;
 }
+
+h2 {
+    text-align: center;
+    color: darkblue;
+}
     </style>
 </head>
 <body>
     <h1>
-        RARE FOOTAGE OF MASS GATHERING INSIDE THE GREY ZONE ON GREY DAY
+        RARE FOOTAGE OF MASS GATHERINGS INSIDE THE GREY ZONE 
     </h1>
+<h2>
+    UPLOAD YOUR OWN CLASSIFIED FOOTAGE FROM THE GREY ZONE HERE
+</h2>
+       
+    
+    
 
-       <video width="320" height="240" controls>
-            <source src="shakewell1.mp4" type="video/mp4">
-        </video><br>
-    <br><hr>
 
-    <video width="320" height="240" controls>
-        <source src="shakewell2.mp4" type="video/mp4">
-    </video><br>
-<br><hr>
 
-<input type="file" id="upload" hidden/>
-<label for="upload">Choose file</label>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<video width="200" controls>
+  <source src="mov_bbb.mp4" id="video_here">
+    Your browser does not support HTML5 video.
+</video>
+
+<input type="file" name="file[]" class="file_multi_video" accept="video/*">
 
 <script>
 
-const actualBtn = document.getElementById('actual-btn');
-
-const fileChosen = document.getElementById('file-chosen');
-
-actualBtn.addEventListener('change', function(){
-  fileChosen.textContent = this.files[0].name
-})
+$(document).on("change", ".file_multi_video", function(evt) {
+  var $source = $('#video_here');
+  $source[0].src = URL.createObjectURL(this.files[0]);
+  $source.parent()[0].load();
+});
 </script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<video width="200" controls>
+  <source src="mov_bbb.mp4" id="video_here">
+    Your browser does not support HTML5 video.
+</video>
+
+<input type="file" name="file[]" class="file_multi_video" accept="video/*">
+
+<script>
+
+$(document).on("change", ".file_multi_video", function(evt) {
+  var $source = $('#video_here');
+  $source[0].src = URL.createObjectURL(this.files[0]);
+  $source.parent()[0].load();
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<video width="200" controls>
+  <source src="mov_bbb.mp4" id="video_here">
+    Your browser does not support HTML5 video.
+</video>
+
+<input type="file" name="file[]" class="file_multi_video" accept="video/*">
+
+<script>
+
+$(document).on("change", ".file_multi_video", function(evt) {
+  var $source = $('#video_here');
+  $source[0].src = URL.createObjectURL(this.files[0]);
+  $source.parent()[0].load();
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<video width="200" controls>
+  <source src="mov_bbb.mp4" id="video_here">
+    Your browser does not support HTML5 video.
+</video>
+
+<input type="file" name="file[]" class="file_multi_video" accept="video/*">
+
+<script>
+
+$(document).on("change", ".file_multi_video", function(evt) {
+  var $source = $('#video_here');
+  $source[0].src = URL.createObjectURL(this.files[0]);
+  $source.parent()[0].load();
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<video width="200" controls>
+  <source src="mov_bbb.mp4" id="video_here">
+    Your browser does not support HTML5 video.
+</video>
+
+<input type="file" name="file[]" class="file_multi_video" accept="video/*">
+
+<script>
+
+$(document).on("change", ".file_multi_video", function(evt) {
+  var $source = $('#video_here');
+  $source[0].src = URL.createObjectURL(this.files[0]);
+  $source.parent()[0].load();
+});
+</script>
+
 
 </body>
 </html>

@@ -23,10 +23,45 @@
       background-color: grey;
     }
 
+    h2 { 
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: darkblue;
+    }
 
+    .text {
+        color: darkred;
+    }
 
-   
+   .comment {
+       width: 300;
+       margin: 0;
+   }
     
+
+
+   #respond {
+  margin-top: 40px;
+}
+
+#respond input[type='text'],
+#respond input[type='email'], 
+#respond textarea {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
+
+}
     
     </style>
 
@@ -57,14 +92,9 @@
     
     </div>
 
-    <form action="/file:///C:/Users/user1/desktop/G59/meaning.html" method="post">
-        <div>
-        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
-        Hey... say something!
-        </textarea>
-        </div>
-        <input type="submit" value="Submit">
-        </form>
+        <h2>
+            WE INVITE YOU TO SEND YOUR OWN LOVE LETTERS TO G*59
+        </h2>
 
 
         <div class="comment">
@@ -98,6 +128,55 @@
             </script>
 
     
+<!-- begin wwww.htmlcommentbox.com -->
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rxv8%2FYRyAMdcZoIThlIGk1"+"&opts=16862&num=10&ts=1605106838985");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
 
+<form action="/html/tags/html_form_tag_action.cfm" method="post">
+    Comments:<br />
+    <textarea name="comments" id="comments" style="width:160px;height:90px;background-color:#D0F18F;color:#53760D;font:24px/30px cursive;">
+    Hey... say something!
+    </textarea><br />
+    <input type="submit" value="Submit" />
+    </form>
+
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="xI9NyReM"></script>
+
+<div class="fb-comments" data-href="file:///C:/Users/user1/desktop/G59/meaning.html" data-numposts="10" data-width=""></div>
+
+
+
+<div id="respond">
+
+    <h3>Leave a Comment</h3>
+  
+    <form action="post_comment.php" method="post" id="commentform">
+  
+      <label for="comment_author" class="required">Your name</label>
+      <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+  
+      <label for="email" class="required">Your email;</label>
+      <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+  
+      <label for="comment" class="required">Your message</label>
+      <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+  
+      
+      <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+      <input name="submit" type="submit" value="Submit comment" />
+  
+    </form>
+  
+  </div>
+
+  <script>
+    hcb_user = {
+      PAGE: "http://oldurl.com/oldpage.html"
+    };
+    </script>
 </body>
 </html>
