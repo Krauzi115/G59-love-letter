@@ -1,5 +1,5 @@
 var quotes = [
-    'Letting a new day begin Letting a new day begin Hold to the time that you know',
+    'Letting a new day begin, Hold to the time that you know',
     'I am the Lord of loneliness I\'ll hold my breath Just spoke with death He said he hopes for the best',
     'Close your eyes, to see what it really means Effortless hands to hold on to peace',
     'Deleted whenever I feel defeated',
@@ -16,7 +16,9 @@ var quotes = [
     'This what keep me sane when I\'m down who gon\' pick me up?',
     'Barrel full of gasoline but still they try matchin\' me', 
     'Come and talk with me and walk with me and dance with me under the moonlight If you believe two souls can turn to one',
-
+    'It\'s you it\'s not true, worth of my woes',
+    'I\'m wired with desire, throw the water in the fire',
+    'Devil in my soul mind runnin around'
 ];
 
 function newQuote() {

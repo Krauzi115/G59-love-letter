@@ -3,30 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>History</title>
 </head>
 
 <style>
     h1 {
         text-align: center;
         color: crimson;
-
     }
-    h2 {
+    
+
+    
+
+    h3 {
         text-align: center;
-        color: darkblue;
+        color: yellowgreen;
+        font-style: oblique;
     }
 
-    body {
-        background-color: darkgray;
-    }
+    html { 
+        background: url("temp.gif") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.origin {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50px;
+}
+
+.locate {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50px;
+}
+
+div{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
 </style>
 <body>
-    <h1>
-        ORIGINS OF G*59
-    </h1>
-    <h2>
-        LEARN THE HISTORY BEHIND THE GREATEST RECORD LABEL EVER
-    </h2>
+    <div title="title">
+        <h1>
+            GREY ORIGINS
+        </h1>
+    </div>
+    
+   
+    
+
+    <img src="duo18.jpg" alt="founders" class="origin">
+
+    <h3>
+        G*59 / GREY FIVE NINE RECORDS was founded in 2014 by $uicideBoy$ duo cousins Aristos Petrou (Ruby Da Cherry) and Scott Arceneaux Jr. ($crim). Born and bred in the 7th Ward of New Orleans, the duo of cousins created the G*59 Record Label in 2014. Both were dissatisfied with the directions of their lives and made a pact to successfully make it in the music industry, with $crim stating "There's no plan B... If this doesn't happen by the time we're 30, I'm blowing my head off." Thus the $uicideBoy$ were born, and the group broke into the underground rap scene and have sinced then gained a cult following which grows bigger every day. The duo explore topics not normally touched in the music industry, like suicidal ideation, depression, and satanism. In the beginning, the group's themes of satanism came under controversy due to associatian with devil worshipping. $crim responded to this by stating that the satanic imagery they use is only a metonym for drugs, money, and other items that have the power to manipulate people. Despite their controversy the duo's musical themes have become a core aspect of their following, with many listeners connecting to the themes and pain both have experienced. $crim also stated that “A lot of people take it as emo, or depressed music, or negative music... it’s really just connecting. It’s therapy, through music". 
+    </h3>
+
+    <img src="wardmap.webp" alt="map" class="locate">
 </body>
 </html>
